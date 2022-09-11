@@ -3,11 +3,11 @@
   <title>Koyuki_Blog</title>
   
   <subtitle>koyuki</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://hoshinokoyuki.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://hoshinokoyuki.github.io/"/>
   <updated>2022-09-08T10:55:01.838Z</updated>
-  <id>http://example.com/</id>
+  <id>https://hoshinokoyuki.github.io/</id>
   
   <author>
     <name>KoyukiHosino</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/posts/4a17b156.html"/>
-    <id>http://example.com/posts/4a17b156.html</id>
+    <link href="https://hoshinokoyuki.github.io/posts/4a17b156.html"/>
+    <id>https://hoshinokoyuki.github.io/posts/4a17b156.html</id>
     <published>2022-09-08T07:53:24.071Z</published>
     <updated>2022-09-08T10:55:01.838Z</updated>
     
