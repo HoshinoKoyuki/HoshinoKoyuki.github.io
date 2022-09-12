@@ -47,6 +47,15 @@
   </url>
   
   <url>
+    <loc>https://blog.koyuki.com.cn/404.html</loc>
+    
+    <lastmod>2022-09-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.koyuki.com.cn/abc.html</loc>
     
     <lastmod>2022-09-12</lastmod>

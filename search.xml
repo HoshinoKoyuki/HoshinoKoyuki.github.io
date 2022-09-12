@@ -71,6 +71,17 @@
     
     
     <entry>
+      <title>404捏</title>
+      <link href="/404.html"/>
+      <url>/404.html</url>
+      
+        <content type="html"><![CDATA[<p>走丢了捏</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>abc页面</title>
       <link href="/abc.html"/>
       <url>/abc.html</url>
