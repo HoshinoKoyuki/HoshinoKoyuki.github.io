@@ -75,7 +75,7 @@
       <link href="/404.html"/>
       <url>/404.html</url>
       
-        <content type="html"><![CDATA[<p>走丢了捏</p>]]></content>
+        <content type="html"><![CDATA[<div class="tip error"><p>走丢了捏，快回去吧！</p></div><div class="timeline blue"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>传送门</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>肘跟我进乌</p></div></div><div class='timeline-item-content'><div class="tag link"><a class="link-card" title="主页" href="https://HoshinoKoyuki.github.io"><div class="left"><img src="/img/93190046o.png"/></div><div class="right"><p class="text">主页</p><p class="url">https://HoshinoKoyuki.github.io</p></div></a></div></div></div></div>]]></content>
       
     </entry>
     
