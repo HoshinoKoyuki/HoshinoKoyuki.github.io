@@ -65,6 +65,15 @@
   </url>
   
   <url>
+    <loc>https://koyuki.com.cn/posts/5f9e518d.html</loc>
+    
+    <lastmod>2022-10-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://koyuki.com.cn/posts/9520183a.html</loc>
     
     <lastmod>2022-10-06</lastmod>
@@ -168,6 +177,20 @@
   
   <url>
     <loc>https://koyuki.com.cn/tags/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2022-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://koyuki.com.cn/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/</loc>
+    <lastmod>2022-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://koyuki.com.cn/tags/hadoop/</loc>
     <lastmod>2022-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
