@@ -127,6 +127,15 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://koyuki.com.cn/categories/%E6%8A%80%E6%9C%AF/test.html</loc>
+    
+    <lastmod>2022-10-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   <url>
     <loc>https://koyuki.com.cn/</loc>
