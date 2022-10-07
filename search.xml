@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>大数据技术与应用</title>
+      <link href="/posts/5f9e518d.html"/>
+      <url>/posts/5f9e518d.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="模块-A：大数据平台搭建（容器环境）"><a href="#模块-A：大数据平台搭建（容器环境）" class="headerlink" title="模块 A：大数据平台搭建（容器环境）"></a>模块 A：大数据平台搭建（容器环境）</h1><h2 id="一、拷贝文件"><a href="#一、拷贝文件" class="headerlink" title="一、拷贝文件"></a>一、拷贝文件</h2><div class="note info simple"><p>下载 <a href="https://hadoop.apache.org/release/2.7.7.html">hadoop-2.7.7.tar.gz</a> 和 <a href="https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html">jdk-8u212-linux-x64.tar.gz</a> 并复制到容器 master 的 software 中（若路径不存在，则需新建，<span class='p red'>路径为：/opt/software</span>）</p></div><h2 id="二、解压文件"><a href="#二、解压文件" class="headerlink" title="二、解压文件"></a>二、解压文件</h2><div class="note info simple"><p>将 master 节点 JDK 安装包解压到 module 路径中(若路径不存在，则需新建，<span class='p red'>路径为：/opt/module</span>)</p></div><details class="folding-tag" cyan open><summary> CentOS7下解压文件及压缩命令 </summary>              <div class='content'>              <div class="note info simple"><p>tar参数详解：<br>tar<br>这五个是独立的命令，压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个。<br>-c: 建立压缩档案<br>-x：解压<br>-t：查看内容<br>-r：向压缩归档文件末尾追加文件<br>-u：更新原压缩包中的文件</p><p>下面的参数是根据需要在压缩或解压档案时可选的。<br>-z：有gzip属性的<br>-j：有bz2属性的<br>-Z：有compress属性的<br>-v：显示所有过程<br>-O：将文件解开到标准输出</p><p>下面的参数-f是必须的<br>-f: 使用档案名字，切记，这个参数是最后一个参数，后面只能接档案名。</p></div><details class="folding-tag" green><summary> 解压 </summary>              <div class='content'>              <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">解压file.tar包：    tar –xvf file.tar</span><br><span class="line">解压file.tar.gz：  tar <span class="literal">-zxvf</span> file.tar.gz</span><br><span class="line">解压 file.tar.bz2：tar <span class="literal">-jxvf</span> file.tar.bz2 </span><br><span class="line">解压file.tar.Z：    tar –Zxvf file.tar.Z</span><br><span class="line">解压file.rar：      unrar e file.rar</span><br><span class="line">解压file.zip：      unzip file.zip </span><br></pre></td></tr></table></figure>              </div>            </details><details class="folding-tag" green><summary> 压缩 </summary>              <div class='content'>              <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">将当前目录里的file.txt文件打包成file.tar：      tar –cvf file.tar file.txt</span><br><span class="line">将当前目录里的file.txt文件打包成file.tar.gz：  tar –czf file.tar.gz file.txt</span><br><span class="line">将当前目录里的file.txt文件打包成file.tar.bz2：tar –cjf file.tar.bz2 file.txt</span><br><span class="line">将当前目录里的file.txt文件打包成file.tar.Z：    tar –cZf file.tar.Z file.txt</span><br><span class="line">将当前目录里的file.txt文件打包成file.zip：      zip file.zip file.txt</span><br></pre></td></tr></table></figure>              </div>            </details>              </div>            </details><details class="folding-tag" red><summary> 使用以下命令解压 /opt/software 中的文件到 /opt/module 下 </summary>              <div class='content'>              <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar zxvf /opt/software/hadoop<span class="literal">-2</span>.<span class="number">7.7</span>.tar.gz <span class="literal">-C</span> /opt/module</span><br><span class="line">tar zxvf /opt/software/jdk<span class="literal">-8u212-linux-x64</span>.tar.gz <span class="literal">-C</span> /opt/module</span><br></pre></td></tr></table></figure>              </div>            </details><h2 id="三、配置环境变量"><a href="#三、配置环境变量" class="headerlink" title="三、配置环境变量"></a>三、配置环境变量</h2><p>修改容器中 profile 文件（<span class='p red'>路径为：/etc/profile</span>）<br><details class="folding-tag" green><summary> 打开 profile 文件 </summary>              <div class='content'>              <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></table></figure><div class="note info simple"><p>可以切大写 <kbd>CapsLock</kbd> 然后按 <kbd>G</kbd> 跳至尾行，也可以使用 <kbd>shift</kbd> + <kbd>g</kbd>（小写）</p></div>              </div>            </details></p><details class="folding-tag" green><summary> 环境变量配置 </summary>              <div class='content'>              <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># java &amp; hadoop</span></span><br><span class="line">export JAVA_HOME=/opt/module/jdk1.<span class="number">8.0</span>_212</span><br><span class="line">export HADOOP_HOME=/opt/module/hadoop<span class="literal">-2</span>.<span class="number">7.7</span></span><br><span class="line">export PATH=<span class="variable">$PATH:JAVA_HOME</span>/bin:HADOOP_HOME/bin</span><br></pre></td></tr></table></figure><div class="tip warning"><p>记得保存！</p></div><div class="note info simple"><p>先<kbd>ESC</kbd> 然后<kbd>:wq</kbd> 或 <kbd>:wq!</kbd></p></div>              </div>            </details><details class="folding-tag" green><summary> 刷新环境变量 </summary>              <div class='content'>              <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">. /etc/profile</span><br></pre></td></tr></table></figure>              </div>            </details><details class="folding-tag" green><summary> 验证配置 </summary>              <div class='content'>              <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java <span class="literal">-version</span></span><br><span class="line">javac</span><br></pre></td></tr></table></figure>              </div>            </details>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 大数据 </tag>
+            
+            <tag> hadoop </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>实现创建用户与用户组一键端</title>
       <link href="/posts/bf9aa7dd.html"/>
       <url>/posts/bf9aa7dd.html</url>
@@ -65,29 +88,6 @@
             <tag> 微信小程序 </tag>
             
             <tag> 设计 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>大数据技术与应用</title>
-      <link href="/posts/5f9e518d.html"/>
-      <url>/posts/5f9e518d.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 技术 </tag>
-            
-            <tag> 大数据 </tag>
-            
-            <tag> hadoop </tag>
             
         </tags>
       
