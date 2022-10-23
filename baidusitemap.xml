@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.koyuki.com.cn/posts/9b535f5.html</loc>
+    <lastmod>2022-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.koyuki.com.cn/posts/697f9beb.html</loc>
+    <lastmod>2022-10-23</lastmod>
+  </url>
+  <url>
     <loc>https://blog.koyuki.com.cn/posts/83608bf2.html</loc>
     <lastmod>2022-10-23</lastmod>
   </url>
@@ -22,6 +30,10 @@
   </url>
   <url>
     <loc>https://blog.koyuki.com.cn/posts/eb17b0ec.html</loc>
+    <lastmod>2022-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.koyuki.com.cn/posts/e64a4f6e.html</loc>
     <lastmod>2022-10-23</lastmod>
   </url>
   <url>
@@ -49,19 +61,7 @@
     <lastmod>2022-10-23</lastmod>
   </url>
   <url>
-    <loc>https://blog.koyuki.com.cn/posts/9b535f5.html</loc>
-    <lastmod>2022-10-23</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.koyuki.com.cn/posts/697f9beb.html</loc>
-    <lastmod>2022-10-23</lastmod>
-  </url>
-  <url>
     <loc>https://blog.koyuki.com.cn/posts/5f9e518d.html</loc>
-    <lastmod>2022-10-23</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.koyuki.com.cn/posts/e64a4f6e.html</loc>
     <lastmod>2022-10-23</lastmod>
   </url>
 </urlset> 
