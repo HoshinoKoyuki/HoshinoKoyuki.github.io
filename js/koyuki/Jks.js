@@ -1,0 +1,1 @@
+"use strict";window.onload=function(){var t=$("#topGroup .top-group-list-item");t.length&&t.css("width","calc(100% / "+t.length+" - 5px)")};
