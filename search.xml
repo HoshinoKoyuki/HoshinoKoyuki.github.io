@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>mysql的应用</title>
+      <link href="/posts/a3410e7c.html"/>
+      <url>/posts/a3410e7c.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>循环移位密码</title>
       <link href="/posts/e93280fa.html"/>
       <url>/posts/e93280fa.html</url>
@@ -78,9 +105,9 @@
       
         <tags>
             
-            <tag> 技术 </tag>
-            
             <tag> 学习 </tag>
+            
+            <tag> 技术 </tag>
             
             <tag> JavaScript </tag>
             
@@ -446,22 +473,22 @@
     
     
     <entry>
-      <title></title>
-      <link href="/manifest.json"/>
-      <url>/manifest.json</url>
+      <title>abc页面</title>
+      <link href="/abc.html"/>
+      <url>/abc.html</url>
       
-        <content type="html"><![CDATA[{"name":"Koyuki_Blog","short_name":"koyuki","theme_color":"#5CA1FF","background_color":"#5CA1FF","display":"standalone","scope":"/","start_url":"/","icons":[{"src":"https://pic.koyuki.com.cn/pic/siteicon/16.png","sizes":"16x16","type":"image/png"},{"src":"https://pic.koyuki.com.cn/pic/siteicon/32.png","sizes":"32x32","type":"image/png"},{"src":"https://pic.koyuki.com.cn/pic/siteicon/48.png","sizes":"48x48","type":"image/png"},{"src":"https://pic.koyuki.com.cn/pic/siteicon/64.png","sizes":"64x64","type":"image/png"},{"src":"https://pic.koyuki.com.cn/pic/siteicon/128.png","sizes":"128x128","type":"image/png"},{"src":"https://pic.koyuki.com.cn/pic/siteicon/144.png","sizes":"144x144","type":"image/png"},{"src":"https://pic.koyuki.com.cn/pic/siteicon/512.png","sizes":"512x512","type":"image/png"}],"splash_pages":null}]]></content>
+        <content type="html"><![CDATA[<p>abc页面</p>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>abc页面</title>
-      <link href="/abc.html"/>
-      <url>/abc.html</url>
+      <title></title>
+      <link href="/manifest.json"/>
+      <url>/manifest.json</url>
       
-        <content type="html"><![CDATA[<p>abc页面</p>]]></content>
+        <content type="html"><![CDATA[{"name":"Koyuki_Blog","short_name":"koyuki","theme_color":"#5CA1FF","background_color":"#5CA1FF","display":"standalone","scope":"/","start_url":"/","icons":[{"src":"https://pic.koyuki.com.cn/pic/siteicon/16.png","sizes":"16x16","type":"image/png"},{"src":"https://pic.koyuki.com.cn/pic/siteicon/32.png","sizes":"32x32","type":"image/png"},{"src":"https://pic.koyuki.com.cn/pic/siteicon/48.png","sizes":"48x48","type":"image/png"},{"src":"https://pic.koyuki.com.cn/pic/siteicon/64.png","sizes":"64x64","type":"image/png"},{"src":"https://pic.koyuki.com.cn/pic/siteicon/128.png","sizes":"128x128","type":"image/png"},{"src":"https://pic.koyuki.com.cn/pic/siteicon/144.png","sizes":"144x144","type":"image/png"},{"src":"https://pic.koyuki.com.cn/pic/siteicon/512.png","sizes":"512x512","type":"image/png"}],"splash_pages":null}]]></content>
       
     </entry>
     
@@ -535,6 +562,17 @@
     
     <entry>
       <title></title>
+      <link href="/css/enforce/enforce.css"/>
+      <url>/css/enforce/enforce.css</url>
+      
+        <content type="html"><![CDATA[.enforce_hide {    display: none!important;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/css/nav/nav_menu.css"/>
       <url>/css/nav/nav_menu.css</url>
       
@@ -601,10 +639,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/coin/coin.js"/>
-      <url>/js/coin/coin.js</url>
+      <link href="/js/koyuki/Jks.js"/>
+      <url>/js/koyuki/Jks.js</url>
       
-        <content type="html"><![CDATA[var tipButtons = document.querySelectorAll('.tip-button');function coinAudio() {  var coinAudio = document.getElementById('coinAudio');  if (coinAudio) {    coinAudio.play(); //有音频时播放  }}// Loop through all buttons (allows for multiple buttons on page)tipButtons.forEach(button => {  var coin = button.querySelector('.coin');  // The larger the number, the slower the animation  coin.maxMoveLoopCount = 90;  button.addEventListener('click', () => {    if (/Android|webOS|BlackBerry/i.test(navigator.userAgent)) return true; //媒体选择    if (button.clicked) return;    button.classList.add('clicked');    // Wait to start flipping th coin because of the button tilt animation    setTimeout(() => {      // Randomize the flipping speeds just for fun      coin.sideRotationCount = Math.floor(Math.random() * 5) * 90;      coin.maxFlipAngle = (Math.floor(Math.random() * 4) + 3) * Math.PI;      button.clicked = true;      flipCoin();      coinAudio();    }, 50);  });  var flipCoin = () => {    coin.moveLoopCount = 0;    flipCoinLoop();  };  var resetCoin = () => {    coin.style.setProperty('--coin-x-multiplier', 0);    coin.style.setProperty('--coin-scale-multiplier', 0);    coin.style.setProperty('--coin-rotation-multiplier', 0);    coin.style.setProperty('--shine-opacity-multiplier', 0.4);    coin.style.setProperty('--shine-bg-multiplier', '50%');    coin.style.setProperty('opacity', 1);    // Delay to give the reset animation some time before you can click again    setTimeout(() => {      button.clicked = false;    }, 300);  };  var flipCoinLoop = () => {    coin.moveLoopCount++;    var percentageCompleted = coin.moveLoopCount / coin.maxMoveLoopCount;    coin.angle = -coin.maxFlipAngle * Math.pow(percentageCompleted - 1, 2) + coin.maxFlipAngle;    // Calculate the scale and position of the coin moving through the air    coin.style.setProperty('--coin-y-multiplier', -11 * Math.pow(percentageCompleted * 2 - 1, 4) + 11);    coin.style.setProperty('--coin-x-multiplier', percentageCompleted);    coin.style.setProperty('--coin-scale-multiplier', percentageCompleted * 0.6);    coin.style.setProperty('--coin-rotation-multiplier', percentageCompleted * coin.sideRotationCount);    // Calculate the scale and position values for the different coin faces    // The math uses sin/cos wave functions to similate the circular motion of 3D spin    coin.style.setProperty('--front-scale-multiplier', Math.max(Math.cos(coin.angle), 0));    coin.style.setProperty('--front-y-multiplier', Math.sin(coin.angle));    coin.style.setProperty('--middle-scale-multiplier', Math.abs(Math.cos(coin.angle), 0));    coin.style.setProperty('--middle-y-multiplier', Math.cos((coin.angle + Math.PI / 2) % Math.PI));    coin.style.setProperty('--back-scale-multiplier', Math.max(Math.cos(coin.angle - Math.PI), 0));    coin.style.setProperty('--back-y-multiplier', Math.sin(coin.angle - Math.PI));    coin.style.setProperty('--shine-opacity-multiplier', 4 * Math.sin((coin.angle + Math.PI / 2) % Math.PI) - 3.2);    coin.style.setProperty(      '--shine-bg-multiplier',      -40 * (Math.cos((coin.angle + Math.PI / 2) % Math.PI) - 0.5) + '%'    );    // Repeat animation loop    if (coin.moveLoopCount < coin.maxMoveLoopCount) {      if (coin.moveLoopCount === coin.maxMoveLoopCount - 6) button.classList.add('shrink-landing');      window.requestAnimationFrame(flipCoinLoop);    } else {      button.classList.add('coin-landed');      coin.style.setProperty('opacity', 0);      setTimeout(() => {        button.classList.remove('clicked', 'shrink-landing', 'coin-landed');        setTimeout(() => {          resetCoin();        }, 300);      }, 1500);    }  };});]]></content>
+        <content type="html"><![CDATA[/* * @Author: Hoshinokoyuki knkmitwp0000@gmail.com * @Date: 2022-10-26 22:19:41 * @LastEditors: Hoshinokoyuki knkmitwp0000@gmail.com * @LastEditTime: 2022-10-29 19:37:25 * @FilePath: \Koyuki_Hexo\source\js\koyuki\Jks.js * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE */'use strict'window.onload = function() {    // 头部轮播图    var swiper_container_card = $(".swiper_container_card");    var top_group_list_items = $("#topGroup .top-group-list-item");    // 头部轮播推荐文章自适应    if(top_group_list_items.length) {        top_group_list_items.css("width", "calc(100% / " + top_group_list_items.length + " - 5px)");    }    // 头部轮播图在手机版的情况下隐藏，借用强制执行css    if(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)) swiper_container_card.className="enforce_css";}]]></content>
       
     </entry>
     
@@ -612,10 +650,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/koyuki/Jks.js"/>
-      <url>/js/koyuki/Jks.js</url>
+      <link href="/js/coin/coin.js"/>
+      <url>/js/coin/coin.js</url>
       
-        <content type="html"><![CDATA[/* * @Author: Hoshinokoyuki knkmitwp0000@gmail.com * @Date: 2022-10-26 22:19:41 * @LastEditors: Hoshinokoyuki knkmitwp0000@gmail.com * @LastEditTime: 2022-10-26 22:46:48 * @FilePath: \Koyuki_Hexo\source\js\koyuki\Jks.js * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE */'use strict'// 头部轮播推荐文章自适应window.onload = function() {    var top_group_list_items = $("#topGroup .top-group-list-item");    if(top_group_list_items.length) {        top_group_list_items.css("width", "calc(100% / " + top_group_list_items.length + " - 5px)");    }}]]></content>
+        <content type="html"><![CDATA[var tipButtons = document.querySelectorAll('.tip-button');function coinAudio() {  var coinAudio = document.getElementById('coinAudio');  if (coinAudio) {    coinAudio.play(); //有音频时播放  }}// Loop through all buttons (allows for multiple buttons on page)tipButtons.forEach(button => {  var coin = button.querySelector('.coin');  // The larger the number, the slower the animation  coin.maxMoveLoopCount = 90;  button.addEventListener('click', () => {    if (/Android|webOS|BlackBerry/i.test(navigator.userAgent)) return true; //媒体选择    if (button.clicked) return;    button.classList.add('clicked');    // Wait to start flipping th coin because of the button tilt animation    setTimeout(() => {      // Randomize the flipping speeds just for fun      coin.sideRotationCount = Math.floor(Math.random() * 5) * 90;      coin.maxFlipAngle = (Math.floor(Math.random() * 4) + 3) * Math.PI;      button.clicked = true;      flipCoin();      coinAudio();    }, 50);  });  var flipCoin = () => {    coin.moveLoopCount = 0;    flipCoinLoop();  };  var resetCoin = () => {    coin.style.setProperty('--coin-x-multiplier', 0);    coin.style.setProperty('--coin-scale-multiplier', 0);    coin.style.setProperty('--coin-rotation-multiplier', 0);    coin.style.setProperty('--shine-opacity-multiplier', 0.4);    coin.style.setProperty('--shine-bg-multiplier', '50%');    coin.style.setProperty('opacity', 1);    // Delay to give the reset animation some time before you can click again    setTimeout(() => {      button.clicked = false;    }, 300);  };  var flipCoinLoop = () => {    coin.moveLoopCount++;    var percentageCompleted = coin.moveLoopCount / coin.maxMoveLoopCount;    coin.angle = -coin.maxFlipAngle * Math.pow(percentageCompleted - 1, 2) + coin.maxFlipAngle;    // Calculate the scale and position of the coin moving through the air    coin.style.setProperty('--coin-y-multiplier', -11 * Math.pow(percentageCompleted * 2 - 1, 4) + 11);    coin.style.setProperty('--coin-x-multiplier', percentageCompleted);    coin.style.setProperty('--coin-scale-multiplier', percentageCompleted * 0.6);    coin.style.setProperty('--coin-rotation-multiplier', percentageCompleted * coin.sideRotationCount);    // Calculate the scale and position values for the different coin faces    // The math uses sin/cos wave functions to similate the circular motion of 3D spin    coin.style.setProperty('--front-scale-multiplier', Math.max(Math.cos(coin.angle), 0));    coin.style.setProperty('--front-y-multiplier', Math.sin(coin.angle));    coin.style.setProperty('--middle-scale-multiplier', Math.abs(Math.cos(coin.angle), 0));    coin.style.setProperty('--middle-y-multiplier', Math.cos((coin.angle + Math.PI / 2) % Math.PI));    coin.style.setProperty('--back-scale-multiplier', Math.max(Math.cos(coin.angle - Math.PI), 0));    coin.style.setProperty('--back-y-multiplier', Math.sin(coin.angle - Math.PI));    coin.style.setProperty('--shine-opacity-multiplier', 4 * Math.sin((coin.angle + Math.PI / 2) % Math.PI) - 3.2);    coin.style.setProperty(      '--shine-bg-multiplier',      -40 * (Math.cos((coin.angle + Math.PI / 2) % Math.PI) - 0.5) + '%'    );    // Repeat animation loop    if (coin.moveLoopCount < coin.maxMoveLoopCount) {      if (coin.moveLoopCount === coin.maxMoveLoopCount - 6) button.classList.add('shrink-landing');      window.requestAnimationFrame(flipCoinLoop);    } else {      button.classList.add('coin-landed');      coin.style.setProperty('opacity', 0);      setTimeout(() => {        button.classList.remove('clicked', 'shrink-landing', 'coin-landed');        setTimeout(() => {          resetCoin();        }, 300);      }, 1500);    }  };});]]></content>
       
     </entry>
     

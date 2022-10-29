@@ -1,1 +1,1 @@
-"use strict";window.onload=function(){var t=$("#topGroup .top-group-list-item");t.length&&t.css("width","calc(100% / "+t.length+" - 5px)")};
+"use strict";window.onload=function(){var o=$(".swiper_container_card"),e=$("#topGroup .top-group-list-item");e.length&&e.css("width","calc(100% / "+e.length+" - 5px)"),navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)&&(o.className="enforce_css")};
