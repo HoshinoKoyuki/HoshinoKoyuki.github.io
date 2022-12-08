@@ -56,24 +56,6 @@
   </url>
   
   <url>
-    <loc>https://blog.koyuki.com.cn/posts/9b535f5.html</loc>
-    
-    <lastmod>2022-12-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.koyuki.com.cn/posts/e64a4f6e.html</loc>
-    
-    <lastmod>2022-12-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.koyuki.com.cn/posts/697f9beb.html</loc>
     
     <lastmod>2022-12-08</lastmod>
@@ -155,25 +137,7 @@
   </url>
   
   <url>
-    <loc>https://blog.koyuki.com.cn/posts/5f9e518d.html</loc>
-    
-    <lastmod>2022-12-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.koyuki.com.cn/posts/9520183a.html</loc>
-    
-    <lastmod>2022-12-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.koyuki.com.cn/posts/4a17b156.html</loc>
+    <loc>https://blog.koyuki.com.cn/posts/eaa26695.html</loc>
     
     <lastmod>2022-12-08</lastmod>
     
@@ -191,7 +155,25 @@
   </url>
   
   <url>
-    <loc>https://blog.koyuki.com.cn/posts/eaa26695.html</loc>
+    <loc>https://blog.koyuki.com.cn/posts/4a17b156.html</loc>
+    
+    <lastmod>2022-12-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.koyuki.com.cn/posts/5f9e518d.html</loc>
+    
+    <lastmod>2022-12-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.koyuki.com.cn/posts/9520183a.html</loc>
     
     <lastmod>2022-12-08</lastmod>
     
@@ -278,20 +260,6 @@
   
   <url>
     <loc>https://blog.koyuki.com.cn/tags/JavaScript/</loc>
-    <lastmod>2022-12-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.koyuki.com.cn/tags/%E5%86%9B%E4%BA%8B%E7%90%86%E8%AE%BA/</loc>
-    <lastmod>2022-12-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.koyuki.com.cn/tags/%E5%A4%A7%E5%AD%A6%E7%BE%8E%E8%82%B2/</loc>
     <lastmod>2022-12-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
